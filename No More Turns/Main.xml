@@ -1,0 +1,5 @@
+<Context ColorSet="Beige_Black" Font="TwCenMT20" FontStyle="Shadow" >
+	<!-- location (centered at the top of the screen, with an offset 0 to the left and 10 down) for the label. -->
+	<!-- Reference: http://forums.civfanatics.com/showthread.php?t=385009-->
+	<Label Anchor="C,T" Offset="0,10" Font="TwCenMT20" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" ID="ClockSecElapsed"/>
+</Context>

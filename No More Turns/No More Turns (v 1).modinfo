@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="45867837-153e-4f26-a33d-c45a382ddbed" version="1">
+  <Properties>
+    <Name>No More Turns</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>After playing the game for 1 hour, the player has to end the current session in 5 turns. Or the empire will gain unhappy</Teaser>
+    <Description>When the player plays the game for 1 hour, a notification will show up to warn the player to end the current game session in 5 turns and get some rest. If the player continues to play after 5 turns, the empire will strat to gain [ICON_UNHAPPINESS] unhappiness.
+[NEWLINE]
+[NEWLINE]
+The citizens believe that a good leader should make important decision at his or he best condition. They will not be happy to see a leader working all day without getting any rest.
+[NEWLINE]
+[NEWLINE]
+Source Code: https://github.com/johnyluyte/civ5mod-no-more-turns</Description>
+    <Authors>Chun Norris</Authors>
+    <SpecialThanks>http://forums.civfanatics.com/</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://chunnorris.cc/</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="6F5833180242DCA8E6E167D1580C0A85" import="0">ProtestSign.xml</File>
+    <File md5="3574E18ADCB4FC3107DDD6A81D5727BD" import="0">Main.lua</File>
+    <File md5="5B9CCBA83CAEE551409DB375D5BF239F" import="0">Main.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>ProtestSign.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Main.xml">
+      <Name>Main</Name>
+      <Description>The UI of No More Turns</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>
