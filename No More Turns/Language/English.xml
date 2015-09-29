@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by chunnorris on 9/29/2015 1:05:10 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN">
+			<Text>Protest Sign</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_PROTESTSIGN_TEXT">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN_STRATEGY">
+			<Text>
+				End the current game session in 5 turns after playing for 1 hour to prevent the [ICON_CITIZEN] Citizens from protesting.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN_HELP">
+			<Text>
+				The Protest Sign gradually increases a civilization's [ICON_HAPPINESS_4] Unhappiness by a MODIFIER. The Protest Signs is built by mad [ICON_CITIZEN] Citizens because their leader refuse to let them rest.
+			</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

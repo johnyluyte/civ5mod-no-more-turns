@@ -17,7 +17,7 @@
 			<Description>TXT_KEY_BUILDING_PROTESTSIGN</Description>
 			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_PROTESTSIGN_TEXT</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_PROTESTSIGN_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_PROTESTSIGN_STRATEGY</Help>
+			<Help>TXT_KEY_BUILDING_PROTESTSIGN_HELP</Help>
 			<GoldMaintenance>0</GoldMaintenance>
 			<MutuallyExclusiveGroup>-1</MutuallyExclusiveGroup>
 			<NeverCapture>1</NeverCapture>
@@ -29,32 +29,16 @@
 			<UnhappinessModifier>30</UnhappinessModifier>
 
 			<BuildingClass>BUILDINGCLASS_PROTESTSIGN</BuildingClass>
-			<ArtDefineTag>COLESSEUM</ArtDefineTag>
-
-			<DisplayPosition>2</DisplayPosition>
-			<PortraitIndex>23</PortraitIndex>
+			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<DisplayPosition>0</DisplayPosition>
+			<PortraitIndex>2</PortraitIndex>
 			<WonderSplashAnchor>R,T</WonderSplashAnchor>
-			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<IconAtlas>EXPANSION2_BUILDING_ATLAS</IconAtlas>
+			<WonderSplashImage>WonderConceptPetra.dds</WonderSplashImage>
 			<ArtInfoCulturalVariation>1</ArtInfoCulturalVariation>
 			<ArtInfoEraVariation>0</ArtInfoEraVariation>
 			<ArtInfoRandomVariation>0</ArtInfoRandomVariation>
 		</Row>
 	</Buildings>
-
-	<Language_en_US>
-		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN">
-			<Text>Protest Sign(s)</Text>
-		</Row>
-		<Row Tag="TXT_KEY_CIV5_BUILDINGS_PROTESTSIGN_TEXT">
-			<Text>
-				The Protest Sign increases a civilization's [ICON_HAPPINESS_3][ICON_HAPPINESS_4] Unhappiness by a MODIFIER. It is built by mad [ICON_CITIZEN] Citizens because their leader refuse to rest.
-			</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN_STRATEGY">
-			<Text>
-				The Protest Sign increases a civilization's [ICON_HAPPINESS_3][ICON_HAPPINESS_4] Unhappiness by a MODIFIER. It is built by mad [ICON_CITIZEN] Citizens because their leader refuse to rest.
-			</Text>
-		</Row>
-	</Language_en_US>
 
 </GameData>

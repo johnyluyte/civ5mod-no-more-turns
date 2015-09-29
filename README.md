@@ -2,6 +2,29 @@
 
 
 
+其他語言
+
+README_TW.md
+
+README_JP.md
+
+日本語バーションはあなたのご力が必要です
+(readme.md, NewText .. etc)
+
+
+test compatability with old game save?
+
+
+## To do
+
+- 要讓使用者可以從 Option 選擇 `time_limit` 與 `turn_buffer`
+
+- 加上 `Protest Sign` 的 icon
+
+- 減 1 unhappiness 而非 modifier
+
+
+
 加 happiness 的方法
 
 http://forums.civfanatics.com/showthread.php?t=429585
@@ -10,10 +33,6 @@ http://forums.civfanatics.com/showthread.php?t=429585
 
 http://forums.civfanatics.com/showthread.php?t=490901
 
-
-要讓使用者可以從 Option 選擇 `time_limit` 與 `turn_buffer`
-
-加上 `Protest Sign` 的 icon
 
 
 When the player plays the game for 1 hour, a notification will show up to warn the player to end the current game session in 5 turns and get some rest. If the player continues to play after 5 turns, the empire will strat to gain unhappiness.
