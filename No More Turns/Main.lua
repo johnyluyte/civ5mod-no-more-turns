@@ -1,9 +1,10 @@
 -- Lua Script1
--- Author: chunnorris
+-- Author: ChunNorris
 -- DateCreated: 9/28/2015 3:17:41 PM
 --------------------------------------------------------------
 
--- After the player reaches `time_limit`, they have `turn_buffer` before receiving penalty.
+-- After the player reaches `time_limit`, 
+-- he/she have `turn_buffer` turns to end the current game session before receiving penalty.
 
 
 -- input: 10:15:03 , output: 36018 (seconds)
@@ -22,21 +23,6 @@ function getTimestampFromTotalSeconds(totalSeconds)
 	return tostring(hour.. ":" .. min .. ":" .. sec);
 end
 
-
--- Seconds limited for one sessions.   
--- time_limit = 60 = 1 minute
--- time_limit = 3600 = 1 hour
-local time_limit = 10;
-
--- Does the player reach time_limit?
-local is_time_limit_reached = false;
-
--- Turns before citizens starts to build Protest Signs.
-local turn_buffer_before_penalty = 2;
-
--- Get the Timestamp(in seconds) when the player starts or loads a game.
-local secs_session_started = getTotalSecondsFromCurrentTimestamp();
-
 -- Get the Player instance of the player who is playing the game.
 local humanPlayer;
 for id, pPlayer in pairs(Players) do
@@ -44,6 +30,29 @@ for id, pPlayer in pairs(Players) do
 		humanPlayer = pPlayer;
 	end
 end
+
+-- Return texts based on Civ5's current language setting(English, Japanese, etc).
+function getText(txt_key)
+	return Locale.ConvertTextKey(txt_key);
+end
+
+
+
+-- Seconds limited for one sessions.   
+-- time_limit =   60 = 1 minute
+-- time_limit =  600 = 10 minute
+-- time_limit = 3000 = 50 minute
+-- time_limit = 3600 = 60 minute
+local time_limit = 3600;
+
+-- Does the player reach time_limit?
+local is_time_limit_reached = false;
+
+-- Turns before citizens starts to build Protest Signs.
+local turn_buffer_before_penalty = 5;
+
+-- Get the Timestamp(in seconds) when the player starts or loads a game.
+local secs_session_started = getTotalSecondsFromCurrentTimestamp();
 
 
 -- ContextPtr:SetUpdate runs on each screen update.
@@ -59,7 +68,7 @@ ContextPtr:SetUpdate(function()
 	end;
 
 	-- Display "how many seconds had elapsed in this session" in the UI.
-	Controls.ClockSecElapsed:SetString(getTimestampFromTotalSeconds(secs_elapsed) .. " had elapsed after game started.");
+	Controls.ClockSecElapsed:SetString(getText("TXT_KEY_NMT_TIMEELAPSED") .. getTimestampFromTotalSeconds(secs_elapsed));
 
 	if secs_elapsed > time_limit then
 	    is_time_limit_reached = true;
@@ -83,13 +92,11 @@ Events.ActivePlayerTurnStart.Add(onTurnStart);
 -- Notify the player that the `time-limit` had been reached.
 function notifyTimeLimitReached()
 	local pCity = humanPlayer:GetCapitalCity();
-	local sTitle = turn_buffer_before_penalty .. " turns before Citizens strike";
-	local sText = "You have been playing civ5 for 1 hour without taking a rest. Your citizens will start to protest (gain [ICON_HAPPINESS_3]" ..
-	" Unhappiness) if you do not take a rest.[NEWLINE][NEWLINE] Turns left before Citizens strike: " .. turn_buffer_before_penalty;
-
+	local sTitle = turn_buffer_before_penalty .. " " .. getText("TXT_KEY_NMT_ALERT_TITLE1");
 	if turn_buffer_before_penalty == 1 then
-		sTitle = "Citizens will start to protest on the next turn.";
-	end
+		sTitle = getText("TXT_KEY_NMT_ALERT_TITLE2");
+	end	
+	local sText =  getText("TXT_KEY_NMT_ALERT_TEXT") .. " " .. turn_buffer_before_penalty;
 
 	humanPlayer:AddNotification(NotificationTypes.NOTIFICATION_STARVING, sText, sTitle, pCity:GetX(), pCity:GetY())
 	turn_buffer_before_penalty = turn_buffer_before_penalty - 1;
@@ -106,8 +113,8 @@ function citizenBuildProtestSign()
 	pCity:SetNumRealBuilding(GameInfoTypes.BUILDING_PROTESTSIGN, numOfProtestSign);
 
 	-- Show Notification
-	local sTitle = "Citizens in " .. pCity:GetName() .. " are protesting!";
-	local sText = "Citizens are not happy about their leader working all day without rest! They bulit a Protest Sign in " .. 
-	pCity:GetName() .. ". The Protest Signs gradually increase [ICON_HAPPINESS_4] Unhappiness in all your cities. [NEWLINE][NEWLINE]Number of Protest Sign: " .. numOfProtestSign;
+	local sTitle = getText("TXT_KEY_NMT_PROTEST_TITLE1") .. " " .. pCity:GetName() .. " " .. getText("TXT_KEY_NMT_PROTEST_TITLE2");
+	local sText = getText("TXT_KEY_NMT_PROTEST_TEXT1") .. " " .. 
+	pCity:GetName() .. getText("TXT_KEY_NMT_PROTEST_TEXT2") .. " " .. numOfProtestSign;
 	humanPlayer:AddNotification(NotificationTypes.NOTIFICATION_STARVING, sText, sTitle, pCity:GetX(), pCity:GetY())
 end

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created by chunnorris on 9/29/2015 1:05:10 PM -->
+<!-- Created by ChunNorris on 9/29/2015 1:05:10 PM -->
 <GameData>
 	<Language_en_US>
+
+		<!-- For Protest Sign Building-->
 		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN">
 			<Text>Protest Sign</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_BUILDINGS_PROTESTSIGN_TEXT">
-			<Text>
-				<!-- Add Civilopedia text here -->
-			</Text>
+			<Text><!-- Add Civilopedia text here --></Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN_STRATEGY">
 			<Text>
@@ -18,6 +18,48 @@
 		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN_HELP">
 			<Text>
 				The Protest Sign gradually increases a civilization's [ICON_HAPPINESS_4] Unhappiness by a MODIFIER. The Protest Signs is built by mad [ICON_CITIZEN] Citizens because their leader refuse to let them rest.
+			</Text>
+		</Row>
+
+		<!-- For In-Game Message. Use _NMT_(No More Turns) to indicate this mod's namespace. -->
+		<Row Tag="TXT_KEY_NMT_TIMEELAPSED">
+			<Text>
+				Time elapsed since game started: 
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_ALERT_TITLE1">
+			<Text>
+				turns before Citizens strike.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_ALERT_TITLE2">
+			<Text>
+				Citizens will start to protest on the next turn.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_ALERT_TEXT">
+			<Text>
+				You have been playing civ5 for 1 hour without taking a rest. Your citizens will start to protest (gain [ICON_HAPPINESS_3] Unhappiness) if you do not take a rest.[NEWLINE][NEWLINE] Turns left before Citizens strike:
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_PROTEST_TITLE1">
+			<Text>
+				Citizens in
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_PROTEST_TITLE2">
+			<Text>
+				are protesting!
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_PROTEST_TEXT1">
+			<Text>
+				Citizens are not happy about their leader working all day without rest! They bulit a Protest Sign in
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_PROTEST_TEXT2">
+			<Text>
+				. The Protest Signs gradually increase [ICON_HAPPINESS_4] Unhappiness in all your cities. [NEWLINE][NEWLINE]Number of Protest Sign:
 			</Text>
 		</Row>
 	</Language_en_US>

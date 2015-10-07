@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ChunNorris on 9/29/2015 3:12:19 PM -->
+<GameData>
+	<Language_ZH_Hant_HK>
+		<!-- For Protest Sign Building-->
+		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN">
+			<Text>抗議標誌</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_PROTESTSIGN_TEXT">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN_STRATEGY">
+			<Text>
+				不要讓市民不開心，當連續遊戲時間超過一小時之後，請在接下來的五回合內結束現階段遊戲，就可以避免過勞的 [ICON_CITIZEN] 市民們遊行抗議。
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN_HELP">
+			<Text>
+				當市民們感到領導人讓他們連續加班工作，不給他們足夠的休息時間時，就會挺身起來抗議。抗議標誌會以倍率方式大大增加玩家所有城市的 [ICON_HAPPINESS_4] 不滿度。</Text>
+		</Row>
+
+		<!-- For In-Game Message. Use _NMT_(No More Turns) to indicate this mod's namespace. -->
+		<Row Tag="TXT_KEY_NMT_TIMEELAPSED">
+			<Text>
+				此階段遊戲已經進行了：
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_ALERT_TITLE1">
+			<Text>
+				回合之後市民將會起身抗議
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_ALERT_TITLE2">
+			<Text>
+				市民將在下回合起身抗議
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_ALERT_TEXT">
+			<Text>
+				您已經連續玩了一個小時，您的市民需要更多的休息時間，否則將起身抗議(增加 [ICON_HAPPINESS_3] 不滿度)，請盡快結束本階段遊戲。[NEWLINE][NEWLINE] 再幾回合後市民將挺身抗議：
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_PROTEST_TITLE1">
+			<Text>
+				
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_PROTEST_TITLE2">
+			<Text>
+				的市民正在抗議！
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_PROTEST_TEXT1">
+			<Text>
+				市民們不滿沒有得到更多的休息時間，挺身站出來抗議，他們在
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_PROTEST_TEXT2">
+			<Text>
+				立起了一個大大的抗議標誌，大量增加了您的帝國的 [ICON_HAPPINESS_4] 不滿度。[NEWLINE][NEWLINE]目前抗議標誌數量：
+			</Text>
+		</Row>
+	</Language_ZH_Hant_HK>
+</GameData>

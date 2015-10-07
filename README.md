@@ -1,51 +1,64 @@
 # civ5mod-no-more-turns
 
+## What does this Mod do
+
+No More Turns: **This Mod restricts your single Civilization V gaming session to 1 hour.**
+
+After that, you will have **5 more turns** to end the current session, otherwise your citizenz will become unhappy.
 
 
-其他語言
+## Installations
 
-README_TW.md
+Go to Steam Workshop, find the `No More Turns` mod page, click subscribe.
 
-README_JP.md
+This Mod is compatable with old(vanilla) Civilization V saved games.
 
-日本語バーションはあなたのご力が必要です
-(readme.md, NewText .. etc)
-
-
-test compatability with old game save?
+However, please always backup your important saved games before applying any mods.
 
 
-## To do
+## Just.. One More Turn..
 
-- 要讓使用者可以從 Option 選擇 `time_limit` 與 `turn_buffer`
+I started a Civilization V game at 15:00 p.m., engjoyed the game.
 
-- 加上 `Protest Sign` 的 icon
+When I felt a bit of hungry and decided to stop the game for dinner, its already 02:00 a.m.
 
-- 減 1 unhappiness 而非 modifier
-
-
-
-加 happiness 的方法
-
-http://forums.civfanatics.com/showthread.php?t=429585
-
-從這邊得到預設的 building 檔案並加以修改
-
-http://forums.civfanatics.com/showthread.php?t=490901
+This happened to so many Civilization V players because one just could not resist the power of "just one more turn".
 
 
+However, even though the game itself is very fun, this is very bad for our health, especially our eyes.
 
-When the player plays the game for 1 hour, a notification will show up to warn the player to end the current game session in 5 turns and get some rest. If the player continues to play after 5 turns, the empire will strat to gain unhappiness.
+This mod will record your playing time for current session and display it on the UI.
 
-The citizens believe that a good leader should make important decision at his or he best condition. They will not be happy to see a leader working all day without getting any rest.
+When it reached a certain value(e.g. 1 hour), the Citizens will start to cry for rest.
+
+After so, if the player do not end the current gaming session in certain turns (e.g. 5 turns),
+
+the Citizens will start to protest and build ProtestSigns, which increases the Unhappiness of the whole empire.
+
+**The ProtestSigns cannot be destoryed and will be there for the whole game!**
+
+
+
+## Todo
+
+- add README_TW.md
+- add README_JP.md
+- add NewText for Japanese
+- The player should be able to tweak two options in the OptionsMenu.
+  - A. (Slider) How many minutes is allowed in a single game session. (default is 60)
+  - B. (Slider) After A. is reached, how many turns are left before the citizens start to protest. (default is 5)
+- Add icon for `Protest Sign`. (Currently we are using the [Ikanda](http://civilization.wikia.com/wiki/Ikanda_(Civ5)) icon.)
+- Are there better ways to implement unhappiness modifier?
+
 
 ## Credit
 
 Special thanks to:
 
-- [The Newbie’s Guide to Modding Civilization 5](http://forums.civfanatics.com/showthread.php?t=493900) by LuvToBuild @ [civfanatics](http://forums.civfanatics.com/)
-- [Modders Guide to Civilization V](http://forums.civfanatics.com/showthread.php?t=385009) by Kael @ [civfanatics](http://forums.civfanatics.com/)
-
+- [The Newbie’s Guide to Modding Civilization 5](http://forums.civfanatics.com/showthread.php?t=493900) by LuvToBuild @ [civfanatics](http://forums.civfanatics.com/) for all the reference links.
+- [Modders Guide to Civilization V](http://forums.civfanatics.com/showthread.php?t=385009) by Kael @ [civfanatics](http://forums.civfanatics.com/) for everything.
+- [XML data files for Standard Civilizations (inc DLC)](http://forums.civfanatics.com/showthread.php?t=490901) for Buildings/Units XML files.
+- [how to add free happiness to a player by lua event](http://forums.civfanatics.com/showthread.php?t=429585) for the trick of using building to modify happiness.
 
 ## License
 

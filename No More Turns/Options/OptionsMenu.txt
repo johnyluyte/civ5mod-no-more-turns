@@ -1,0 +1,9 @@
+-- Text File1
+-- Author: ChunNorris
+-- DateCreated: 10/7/2015 11:27:40 AM
+--------------------------------------------------------------
+The player should be able to tweak two options in the OptionsMenu.
+
+A. (Slider) How many minutes is allowed in a single game session. (default is 60)
+B. (Slider) After A. is reached, how many turns are left before the citizens start to protest. (default is 5)
+

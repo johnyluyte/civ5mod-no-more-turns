@@ -31,11 +31,20 @@ Source Code: https://github.com/johnyluyte/civ5mod-no-more-turns</Description>
   <References />
   <Blocks />
   <Files>
-    <File md5="26A5A3A9BEE017730A97E871130248F1" import="0">Building/ProtestSign.xml</File>
-    <File md5="482F26A658C73C1943D78654DBB4E07F" import="0">Language/English.xml</File>
-    <File md5="E664E32CBF99151EB1CF2F4DF39CDAEA" import="0">Main.lua</File>
+    <File md5="8178E2E48BD87CCEFC27A433BB9D71F6" import="0">Building/ProtestSign.xml</File>
+    <File md5="CC177CCA9F1B0CD3030C51A668071D22" import="0">Language/English.xml</File>
+    <File md5="2DB4CCF9F5358AFCA7F0C04E35A41B3F" import="0">Language/Taiwan.xml</File>
+    <File md5="393AEF4BDF0BF80F12F138581F0AC1BC" import="0">Main.lua</File>
     <File md5="5B9CCBA83CAEE551409DB375D5BF239F" import="0">Main.xml</File>
+    <File md5="04116EEAEFDDB0C8531F669DD10DADE2" import="0">Options/OptionsMenu.txt</File>
   </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Language/English.xml</UpdateDatabase>
+      <UpdateDatabase>Language/Taiwan.xml</UpdateDatabase>
+      <UpdateDatabase>Building/ProtestSign.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
   <EntryPoints>
     <EntryPoint type="InGameUIAddin" file="Main.xml">
       <Name>Main</Name>
