@@ -6,6 +6,8 @@
 -- After the player reaches `time_limit`, 
 -- he/she have `turn_buffer` turns to end the current game session before receiving penalty.
 
+-- DISABLE THIS BEFORE PUBLISHING!
+local debug_mode = false;
 
 -- input: 10:15:03 , output: 36018 (seconds)
 function getTotalSecondsFromCurrentTimestamp()
@@ -37,7 +39,6 @@ function getText(txt_key)
 end
 
 
-
 -- Seconds limited for one sessions.   
 -- time_limit =   60 = 1 minute
 -- time_limit =  600 = 10 minute
@@ -54,6 +55,11 @@ local turn_buffer_before_penalty = 5;
 -- Get the Timestamp(in seconds) when the player starts or loads a game.
 local secs_session_started = getTotalSecondsFromCurrentTimestamp();
 
+-- Debug Mode
+if debug_mode then
+	time_limit = 10;
+	turn_buffer_before_penalty = 2;
+end
 
 -- ContextPtr:SetUpdate runs on each screen update.
 ContextPtr:SetUpdate(function()

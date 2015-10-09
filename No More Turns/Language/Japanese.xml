@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ChunNorris on 10/9/2015 2:39:54 PM -->
+<GameData>
+	<Language_JA_JP>
+		<!-- For Protest Sign Building-->
+		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN">
+			<Text>廃人マーク</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_BUILDINGS_PROTESTSIGN_TEXT">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN_STRATEGY">
+			<Text>
+				ゲームをやり始めた一時間後、次の五ターン内で一時セーブしてやめましょう。でないと過勞な [ICON_CITIZEN] 市民はデモをして、首都で廃人マークを立てる。
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN_HELP">
+			<Text>
+				廃人マークは首都を含めて、全都市で [ICON_HAPPINESS_4] 不満を大幅に増やす。
+			</Text>
+		</Row>
+
+		<!-- For In-Game Message. Use _NMT_(No More Turns) to indicate this mod's namespace. -->
+		<Row Tag="TXT_KEY_NMT_TIMEELAPSED">
+			<Text>
+				ゲームをやり始めたから：
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_ALERT_TITLE1">
+			<Text>
+				ターン後、市民はデモをする
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_ALERT_TITLE2">
+			<Text>
+				次のターン、市民はデモをする
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_ALERT_TEXT">
+			<Text>
+				J( 'ー`)し[NEWLINE]あなたはもう一時間ゲームをやり続いてた、疲れた市民はお休みを要求する、早く一時セーブしてやめましょう。[NEWLINE][NEWLINE]([ICON_HAPPINESS_3] 不滿を増やす)市民はデモをすまで残るターン：
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_PROTEST_TITLE1">
+			<Text>
+
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_PROTEST_TITLE2">
+			<Text>
+				の市民はデモをしている！
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_PROTEST_TEXT1">
+			<Text>
+				市民はもう過労な生活を容認できない、彼らは
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NMT_PROTEST_TEXT2">
+			<Text>
+				で大きな廃人マークを建てた、あなたの全都市の [ICON_HAPPINESS_4] 不満を大幅に増やした。[NEWLINE][NEWLINE]いま建てた廃人マークの数：
+			</Text>
+		</Row>
+	</Language_JA_JP>
+</GameData>
