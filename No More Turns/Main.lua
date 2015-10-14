@@ -46,11 +46,11 @@ end
 -- time_limit = 3600 = 60 minute
 local time_limit = 3600;
 
--- Does the player reach time_limit?
-local is_time_limit_reached = false;
-
 -- Turns before citizens starts to build Protest Signs.
 local turn_buffer_before_penalty = 5;
+
+-- Does the player reach time_limit?
+local is_time_limit_reached = false;
 
 -- Get the Timestamp(in seconds) when the player starts or loads a game.
 local secs_session_started = getTotalSecondsFromCurrentTimestamp();

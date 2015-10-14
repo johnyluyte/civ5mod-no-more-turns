@@ -7,6 +7,7 @@ Please see [the Mod's page on Steam Workshop](http://steamcommunity.com/sharedfi
 ![](imgs/flow_en.jpg)
 ![](imgs/flow_tw.jpg)
 ![](imgs/flow_jp.jpg)
+![](imgs/option.jpg)
 
 
 ## Todo
@@ -28,6 +29,7 @@ Special thanks to:
 - [Modders Guide to Civilization V](http://forums.civfanatics.com/showthread.php?t=385009) by Kael @ [civfanatics](http://forums.civfanatics.com/) for everything.
 - [XML data files for Standard Civilizations (inc DLC)](http://forums.civfanatics.com/showthread.php?t=490901) for Buildings/Units XML files.
 - [how to add free happiness to a player by lua event](http://forums.civfanatics.com/showthread.php?t=429585) for the trick of using building to modify happiness.
+- Komame_Chanman @ SteamWorkshop for Japanese texts correction.
 
 ## License
 

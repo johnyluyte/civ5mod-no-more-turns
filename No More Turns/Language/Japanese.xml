@@ -13,7 +13,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN_STRATEGY">
 			<Text>
-				ゲームをやり始めた一時間後、次の五ターン内で一時セーブしてやめましょう。でないと過勞な [ICON_CITIZEN] 市民はデモをして、首都で廃人マークを立てる。
+				ゲームをやり始めた一時間後、次の五ターン内でセーブしてやめましょう。でないと [ICON_CITIZEN] 市民はデモをして、首都で廃人マークを立てる。
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_BUILDING_PROTESTSIGN_HELP">
@@ -25,7 +25,7 @@
 		<!-- For In-Game Message. Use _NMT_(No More Turns) to indicate this mod's namespace. -->
 		<Row Tag="TXT_KEY_NMT_TIMEELAPSED">
 			<Text>
-				ゲームをやり始めたから：
+				ゲームをやり始めてから：
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NMT_ALERT_TITLE1">
@@ -40,7 +40,7 @@
 		</Row>
 		<Row Tag="TXT_KEY_NMT_ALERT_TEXT">
 			<Text>
-				J( 'ー`)し[NEWLINE]あなたはもう一時間ゲームをやり続いてた、疲れた市民はお休みを要求する、早く一時セーブしてやめましょう。[NEWLINE][NEWLINE]([ICON_HAPPINESS_3] 不滿を増やす)市民はデモをすまで残るターン：
+				J( 'ー`)し[NEWLINE]あなたがゲームをやり始めてから一時間が経った。疲れた市民は休息を要求している、早くセーブをしてゲームをやめなさい。[NEWLINE][NEWLINE]([ICON_HAPPINESS_3] 不滿を増やす)市民はデモをすまで残るターン：
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NMT_PROTEST_TITLE1">
@@ -55,12 +55,12 @@
 		</Row>
 		<Row Tag="TXT_KEY_NMT_PROTEST_TEXT1">
 			<Text>
-				市民はもう過労な生活を容認できない、彼らは
+				市民は過酷な生活にもう耐えられない。彼らは
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_NMT_PROTEST_TEXT2">
 			<Text>
-				で大きな廃人マークを建てた、あなたの全都市の [ICON_HAPPINESS_4] 不満を大幅に増やした。[NEWLINE][NEWLINE]いま建てた廃人マークの数：
+				で大きな廃人マークを建てた、これにより全都市で[ICON_HAPPINESS_4]不満が大幅に増える。[NEWLINE][NEWLINE]いま建てた廃人マークの数：
 			</Text>
 		</Row>
 	</Language_JA_JP>
